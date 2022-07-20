@@ -118,7 +118,7 @@ p{
     width: 75%;
 }
 .banner{
-    border: 1px solid;
+    border: none;
     width: 90%;
     background-repeat: no-repeat;
     background-size: 120%;
@@ -151,6 +151,38 @@ p{
 }
 #gist{
     background-image: url(https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/home/thegist-bg.jpg);
+    margin-bottom: 0;
 }
+#signupB{
+    width: 100vw;
+    border: none;
+    padding: 150px 0;
+    margin: 0;
+    background-image: linear-gradient(to right,#7856ff 0%,#65b9ff 100%);
+    color: white;
+    text-align: center;
+}
+#signupB h3{
+    font-size: 36px;
+    max-width: 480px;
+    margin: auto auto 40px;
+    font-weight: 500;
 
+}
+#signupB p{
+    font-size: 18px;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+#signupB button{
+    padding: 20px 30px;
+    color: #7451ff;
+    background-color: white;
+    border-radius: 4px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+}
 
