@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Graphik Web',Helvetica,sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 120px;
+    font-family:inherit;
+}
+#logo1, nav, #user{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#logo1>img{
+    width: 20px;
+    height: 15px;
+    margin-right: 5px;
+}
+#logo>h3{
+    font-size: 18px;
+}
+nav{
+text-transform: uppercase;
+line-height: 1;
+font-family: Lato,Helvetica Neue,Helvetica,Arial,sans-serif;
+font-size: 0.7em;
+margin-left: 30px;
+}
+nav>p{
+    color: #555a61;
+    margin: auto 15px;
+}
+#user{
+    line-height: 1;
+    font-family: Lato,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 0.68em;
+    margin-left: 10%;
+}
+#user>p{
+    color: #868d97;
+    margin: auto 10px;
+}
+nav>p:hover, #user>p:hover{
+    color: black;
+    font-weight: 600;
+}
+.bgc-green{
+    border: 1px solid #868d97;
+    border-radius: 5px;
+    padding: 10px 17px;
+    text-transform: uppercase;
+}
+#user p.bgc-green:hover{
+    background-color: rgb(135, 209, 16);
+    color: white;
+
+    width: fit-content;
+}

@@ -1,0 +1,86 @@
+#logo1{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+}
+body{
+    background-image: radial-gradient(farthest-side at 0 0, rgb(184, 229, 247), rgb(248, 178, 248));
+}
+#logo1>img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+main{
+    text-align: center;
+    margin-bottom: 100px;
+}
+#logo>h3{
+    font-size: 18px;
+}
+h1{
+    font-size: 46px;
+    font-family: 'Graphik Web',Helvetica,sans-serif;
+}
+h1+p{
+    font-size: 18px;
+    width: 30%;
+    min-width: 450px;
+    margin: auto;
+    font-family: 'Graphik Web',Helvetica,sans-serif;
+
+}
+form{
+    width: 25%;
+    margin: 20px auto;
+    min-width: 320px;
+    box-shadow: 0 0 2px 2px rgb(199, 196, 196);
+    padding: 30px;
+    background-color: #fff;
+}
+form *{
+    display: block;
+    font-family: 'Graphik Web',Helvetica,sans-serif;
+}
+input{
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 7px 14px;
+    font-size: 1.2em;
+
+}
+::placeholder{
+    font-style: italic;
+    color: rgba(155, 154, 154, 0.986);
+    font-weight: 100;
+}
+form>span{
+    font-size: 11px;
+    margin-top: -19px;
+    margin-bottom: 14px;
+    text-align: right;
+    color: grey;
+}
+input[type='submit']{
+    padding: 20px 18px;
+    /* height: 50px; */
+    box-sizing: border-box;
+    font-size: 18px;
+    background-color: #6a35fd;
+    color: white;
+    border: none;
+}
+form>p{
+    font-size: 11px;
+    color: gray;
+}
+div>p{
+    font-size: 13px;
+    width: 35%;
+    margin:  25px auto ;
+}
+a{
+    color: black;
+}

@@ -1,12 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
+    <link rel="stylesheet" href="header-login.css">
+    <link rel="stylesheet" href="login.css">
 </head>
+
 <body>
-    
+    <header>
+        <div id="logo1">
+            <img src="media/camlogo1.png">
+            <h3>Campaign Monitor</h3>
+        </div>
+        <nav>
+            <p>Features</p>
+            <p>Pricing</p>
+            <p>Resources</p>
+            <p>Customers</p>
+            <p>Gallery</p>
+            <p>Agencies</p>
+        </nav>
+        <div id="user">
+            <p>Contact us</p>
+            <p>Log in</p>
+            <p class="bgc-green"><a href="signup.html">Sign up</a></p>
+        </div>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+            <legend>Log In</legend>
+            <div id="input-box">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <label for="pass">Password</label>
+            <input type="password" name="pass" id="pass">
+            <input type="submit" value="LOG IN">
+            <p>Can't remember your Password?</p>
+            </div>
+            <div>
+                <h2><a href="signup.html">CREATE A FREE ACCOUNT</a></h2>
+                <p>Sign up for free account, and start sending campaigns for as little as $9/month.</p>
+            </div>
+        </fieldset>
+        </form>
+        
+    </main>
+
 </body>
+
 </html>
