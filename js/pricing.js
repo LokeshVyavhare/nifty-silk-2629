@@ -1,13 +1,13 @@
 
-
+// service tables data appending using DOM//
 tableData=[
     {
-    title:'channels', rowdata:[
+    title:'Channels', rowdata:[
         {rh:'Email', a1:2500, a2:'Unlimited', a3:'Unlimited'},
         {rh:'SMS', r:true, text:'Contact the sales team'},
     ]
     },
-    {title:'Email acoount settings', rowdata:[
+    {title:'Email account settings', rowdata:[
         {rh:'Multiple users', a1:'Unlimited',a2:'Unlimited',a3:'Unlimited'},
         {rh:'Users roles & permissions', a1:false,a2:false,a3:false},
         {rh:'Two Facor Authentication', a1:false,a2:false,a3:false},
@@ -98,3 +98,120 @@ tableData=[
 
 
 ]
+let section=document.getElementById('services');
+tableData.forEach(function(i){
+    let h1=document.createElement('h1');
+    h1.innerText=i.title;
+    h1.setAttribute('class', 'heading')
+    section.append(h1);
+    i.rowdata.forEach(function(j){
+        let row=document.createElement('tr');
+
+        let t1=document.createElement('td');
+        t1.setAttribute('class','rh')
+        t1.innerText=j.rh; 
+        
+        if(j.r==true){
+            let ne=document.createElement('span');
+            ne.innerText='New';
+            t1.append(ne);
+        }
+        
+        row.append(t1)
+        if(j.text!=undefined){
+            let text=document.createElement('td');
+            text.innerText=j.text;
+            text.setAttribute('colspan', '3');
+            row.append(text)
+        }else if(j.a1!=undefined){
+            let t2=document.createElement('td');
+            if(j.a1==false){
+                t2.innerHTML= '&#10004;';
+                t2.setAttribute('class','gr-tick')
+            }else if(j.a1==true){
+                t2.innerText= ' ';
+            }else{
+                t2.innerText=j.a1;
+            }
+            
+            let t3=document.createElement('td');
+            if(j.a2==false){
+                t3.innerHTML= '&#10004;';
+                t3.setAttribute('class','gr-tick')
+            }else if(j.a2==true){
+                t3.innerText= ' ';
+            }else{
+                t3.innerText=j.a2;
+            }
+            let t4=document.createElement('td');
+            if(j.a3==false){
+                t4.innerHTML= '&#10004;';
+                t4.setAttribute('class','gr-tick')
+            }else if(j.a3==true){
+                t4.innerText= ' ';
+            }else{
+                t4.innerText=j.a3;
+            }
+            row.append(t2, t3, t4);
+        }
+
+       section.append(row);
+    })
+})
+
+// subscription plan scroll function
+window.onscroll=function(){
+    if(document.documentElement.scrollTop>=714){
+        document.querySelectorAll('.plan>p').forEach(function(i){
+            i.setAttribute('class', 'dis-none')
+        })
+    }else{
+        document.querySelectorAll('.plan>p').forEach(function(i){
+            i.setAttribute('class', 'dis-block')
+        })
+    }
+}
+
+// 
+let x=document.querySelector("input[type='range']")
+x.addEventListener('input', pricetool);
+x.value=0;
+function pricetool(event){
+    let count=event.target.value;
+    document.querySelector('#pricetool>h3>span').innerText=count;
+    let p1, p2, p3;
+    if(count<500){
+        p1=9;
+        p2=29;
+        p3=149;
+    }else if(count<2500){
+        p1=29;
+        p2=59;
+        p3=149;
+    }else if(count<5000){
+        p1=49;
+        p2=99;
+        p3=149;
+    }else if(count<10000){
+        p1=89;
+        p2=149;
+        p3=249;
+    }else if(count<15000){
+        p1=129;
+        p2=249;
+        p3=399;
+    }else if(count<25000){
+        p1=199;
+        p2=399;
+        p3=449;
+    }else{
+        p1=299;
+        p2=699;
+        p3=989;
+    }
+    document.querySelectorAll('.plan')[0].querySelector('p>b').innerText=p1;
+    document.querySelectorAll('.plan')[1].querySelector('p>b').innerText=p2;
+    document.querySelectorAll('.plan')[2].querySelector('p>b').innerText=p3;
+
+    
+}
