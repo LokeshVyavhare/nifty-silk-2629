@@ -212,6 +212,9 @@ function pricetool(event){
     document.querySelectorAll('.plan')[0].querySelector('p>b').innerText=p1;
     document.querySelectorAll('.plan')[1].querySelector('p>b').innerText=p2;
     document.querySelectorAll('.plan')[2].querySelector('p>b').innerText=p3;
+    document.querySelectorAll('.plan')[3].querySelector('p>b').innerText=p1;
+    document.querySelectorAll('.plan')[4].querySelector('p>b').innerText=p2;
+    document.querySelectorAll('.plan')[5].querySelector('p>b').innerText=p3;
 
     
 }
