@@ -1,0 +1,118 @@
+footer{
+    background-color: rgb(23, 23, 45);
+    color: white;
+    padding: 50px 50px;
+    font-family: 'Graphik Web',Helvetica,sans-serif;
+    
+}
+#top-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    font-family: inherit;
+}
+#logo{
+    color: white;
+    display: flex;
+    align-items: center;
+}
+#logo>img{
+    width: 40px;
+    height: 40px;
+    margin: auto 2px;
+    border-radius: 10px;
+    display: inline-block;
+}
+#logo h3{
+    display: inline-block;
+    line-height: 0;
+    margin: 0;
+    font-size: 1.2em;
+    font-family: inherit;
+}
+#top-footer>div:last-child{
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-evenly;
+    font-family: inherit;
+}
+
+dt, dd{
+    margin: 10px 0;
+    width: fit-content;
+    font-size: 13px;
+    font-family: inherit;
+}
+dt{
+    color: rgb(163, 145, 180);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: inherit;
+}
+dl{
+    margin: 0 30px;
+    width: fit-content;
+    font-family: inherit;
+}
+#bot-footer button{
+    padding: 20px 30px;
+    margin-bottom: 30px;
+    color: white;
+    background-color: #7451ff;
+    border-radius: 9px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+#social{
+    display: inline-block;
+}
+
+#bot-footer{
+    padding: 20px 0;
+    font-family: inherit;
+}
+#bot-footer>div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}#bot-footer>div>span{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+
+}
+#bot-footer>div>span>p{
+    font-size: 12px;
+}
+#bot-footer button{
+    width: 300px;
+}
+#bot-footer>p{
+    text-align: center;
+    font-size: 12px;
+}
+#bot-footer img{
+    display: block;
+    width: 100px;
+    margin: 30px auto;
+}
+@media screen  and (max-width: 900px) {
+    #bot-footer>div{
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }#bot-footer>div>span{
+        flex-direction: column;
+    }#bot-footer>div>span>p{
+        margin-top: 10px;
+    }
+}
+@media screen  and (max-width: 750px) {
+    #top-footer>div:last-child{
+        grid-template-columns: repeat(2, 1fr);
+}
+}

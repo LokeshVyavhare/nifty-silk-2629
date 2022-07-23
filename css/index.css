@@ -1,0 +1,501 @@
+section {
+    padding: 0;
+}
+
+/* Sign up section 1 */
+#signupA {
+    width: 97%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    margin: auto auto 60px auto;
+    padding: 20px;
+}
+
+#signupA>img {
+    width: 45%;
+}
+
+#signupA>div {
+    width: 45%;
+    padding: 30px;
+}
+
+#signupA>div>h1 {
+    font-size: 55px;
+}
+
+#signupA>div>p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    padding: 0;
+    line-height: 1.7;
+    width: 85%;
+}
+
+#signupA>div>button {
+    width: 46%;
+    padding: 20px 7px;
+    margin-right: 3%;
+    background-color: #7451ff;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#signupA>div>button:last-child {
+    border: 1px solid #7451ff;
+    background-color: white;
+    color: #7451ff;
+}
+
+#signupA>div>button:hover {
+    background-color: #7451ff;
+    color: white;
+}
+
+/* market section */
+#market_partners {
+    background-color: rgb(238, 238, 238);
+    padding: 70px 50px;
+    padding-bottom: 30px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+#market_partners>p {
+    width: fit-content;
+    font-size: 22px;
+    margin: auto;
+}
+
+#market_partners>img {
+    width: 90px;
+    margin: 2% 5%;
+}
+
+
+/* email-section */
+#email-sec {
+    width: 100%;
+    margin: auto 0 50px 15px;
+    padding-right: 0;
+    text-align: center;
+}
+
+#email-sec>div {
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto 0 50px 15px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#email-sec>div>div:first-child {
+    width: 31%;
+    box-sizing: border-box;
+    margin: 5px 25px 10%;
+    padding-top: 5px;
+    text-align: left;
+}
+
+#email-sec>div p {
+    margin: auto -7px;
+    font-size: 14px;
+    color: grey;
+}
+
+#email-sec>div h4 {
+    margin-top: 15px;
+    font-size: 0.95em;
+
+}
+
+#email-sec>div>div:last-child {
+    width: 50%;
+    box-sizing: border-box;
+    margin: 20px 0;
+    box-shadow: 0 0 15px 10px rgb(221, 219, 219);
+    text-align: center;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: 30% 70%;
+    height: 500px;
+}
+
+#email-sec img {
+    width: 140%;
+
+}
+
+#email-sec>h1 {
+    font-size: 35px;
+    margin-bottom: 70px;
+}
+
+#email-sec>p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+#email-sec>button {
+    width: 200px;
+    padding: 20px 7px;
+    margin-bottom: 40px;
+    background-color: #7451ff;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* sms-section */
+#sms-sec {
+    background: url(https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/home/sms-vector-bg-no-dots.svg?ver=298), rgb(240, 237, 237);
+    background-repeat: no-repeat;
+    /* background-position: left top bottom; */
+    padding: 0 4%;
+    height: fit-content;
+    margin-bottom: 80px;
+    display: flex;
+    font-family: 'Graphik Web', Helvetica, sans-serif;
+}
+
+p {
+    margin: auto 0%;
+    padding: auto 0;
+}
+
+#sms-sec img {
+    width: 42%;
+    margin-left: 1%;
+}
+
+#sms-sec>div {
+    width: 30%;
+    min-width: fit-content;
+    margin-left: 10%;
+    margin-top: 5%;
+
+}
+
+#sms-sec h2 {
+    font-size: 32px;
+    line-height: 4mm;
+    width: fit-content;
+}
+
+#sms-sec i {
+    font-weight: 100;
+    display: inline-block;
+}
+
+#sms-sec p {
+    max-width: 300px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+    font-size: 17px;
+    color: rgb(41, 41, 41);
+    margin-bottom: 30px;
+}
+
+#sms-sec button {
+    width: 200px;
+    padding: 20px 7px;
+    margin-bottom: 40px;
+    background-color: #7451ff;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* template section  */
+.template {
+    display: flex;
+    margin-left: -10%;
+    margin-bottom: 70px;
+    font-family: 'Graphik Web', Helvetica, sans-serif;
+
+}
+
+.template>img {
+    width: 20%;
+    margin-right: 20px;
+    box-shadow: 0 0 10px 8px rgb(221, 219, 219);
+}
+
+.template>div {
+    width: 30%;
+    margin-left: 2%;
+    text-align: left;
+    font-size: 1.3em;
+    font-family: inherit;
+
+}
+
+.template h2 {
+    font-size: 36px;
+    line-height: 1.5;
+
+}
+
+.template p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+
+}
+
+.template button {
+    width: 46%;
+    padding: 20px 7px;
+    margin-right: 3%;
+    border-radius: 3px;
+    font-size: 14px;
+    letter-spacing: 0.5mm;
+    font-weight: 600;
+    border: 1px solid #7451ff;
+    background-color: white;
+    color: #7451ff;
+}
+
+.template button:hover {
+    background-color: #7451ff;
+    color: white;
+}
+
+.type2>img {
+    width: 50%;
+    box-shadow: none;
+    margin-right: 5%;
+}
+
+.type2>div {
+    display: inline-block;
+}
+
+.type2 {
+    width: 100%;
+    margin-left: 5%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+#RipCurl {
+    min-height: fit-content;
+    background-image: url(https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/heroes/banner-ripcurl.jpg);
+}
+
+.banner>div {
+    width: 75%;
+}
+
+.banner {
+    border: none;
+    width: 90%;
+    background-repeat: no-repeat;
+    background-size: 120%;
+    padding: 7% 7%;
+    min-height: fit-content;
+    color: white;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.banner>div>p:first-of-type {
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+.banner>div>h4 {
+    margin-bottom: 25px;
+
+}
+
+.banner button {
+    padding: 20px 30px;
+    color: #7451ff;
+    background-color: white;
+    border-radius: 2px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.banner button:hover {
+    background: none;
+    border: 1px solid white;
+    color: white;
+}
+
+#gist {
+    min-height: fit-content;
+    background-image: url(https://www.campaignmonitor.com/wp-content/themes/cm-theme/assets/images/home/thegist-bg.jpg);
+    margin-bottom: 0;
+}
+
+#signupB {
+    width: 100vw;
+    border: none;
+    padding: 150px 0;
+    margin: 0;
+    background-image: linear-gradient(to right, #7856ff 0%, #65b9ff 100%);
+    color: white;
+    text-align: center;
+}
+
+#signupB h3 {
+    font-size: 36px;
+    max-width: 480px;
+    margin: auto auto 40px;
+    font-weight: 500;
+
+}
+
+#signupB p {
+    font-size: 18px;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+#signupB button {
+    padding: 20px 30px;
+    color: #7451ff;
+    background-color: white;
+    border-radius: 4px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media screen and (max-width: 1200px) {
+    #signupA>div>h1 {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+
+    /* sign up part A */
+    #signupA {
+        flex-direction: column;
+    }
+
+    #signupA>div {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #signupA>img {
+        width: 70%;
+        margin: auto;
+    }
+
+    /* email section */
+    #email-sec>div {
+        flex-direction: column-reverse;
+    }
+    #email-sec>div>div:first-child {
+        width: 90%;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 2% 5%;
+    }
+    #email-sec>div.email-content>div:last-child{
+        width: 100%;
+        height: fit-content;
+    }
+    #email-sec img{
+        width: 90%;
+    }
+
+    /* sms section */
+
+    #sms-sec {
+        background: none;
+        flex-direction: column;
+    }
+    #sms-sec img {
+        width: 95%;
+        margin-left: 1%;
+    }
+    #sms-sec>div {
+        width: 90%;
+        margin-left: 10%;
+        margin-top: 5%;
+    
+    }
+    #sms-sec h2 {
+        font-size: 22px;
+    }
+
+    /* template section */
+    .template {
+        display: block;
+        margin: auto 0 70px;
+    }
+    .template>img{
+        display: inline;
+        width: 30%;
+        margin: auto;
+        margin-left: 10px;
+    }
+    .template>div{
+        width: 90%;
+        margin: auto;
+        padding: 20px;
+        text-align: center;
+    }
+    .type2{
+        flex-direction: column;
+    }
+    .type2>div>h2{
+        font-size: 26px;
+    }
+    .type2 img{
+        width: 90%;
+    }
+
+    /* banner */
+    #RipCurl, #gist{
+        background: none;
+        background-color: rgb(36, 25, 25);
+        min-height: fit-content;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .banner>div{
+        width: 975;
+        margin: auto;
+    }
+    .banner>div>p:first-of-type {
+        font-size: 18px;
+    }
+    .banner>div>h4 {
+        font-size: 15px;
+    
+    }
+
+
+}
