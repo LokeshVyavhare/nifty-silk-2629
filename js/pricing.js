@@ -162,11 +162,11 @@ tableData.forEach(function(i){
 // subscription plan scroll function
 window.onscroll=function(){
     if(document.documentElement.scrollTop>=714){
-        document.querySelectorAll('.plan>p').forEach(function(i){
+        document.querySelectorAll('.planV>p').forEach(function(i){
             i.setAttribute('class', 'dis-none')
         })
     }else{
-        document.querySelectorAll('.plan>p').forEach(function(i){
+        document.querySelectorAll('.planV>p').forEach(function(i){
             i.setAttribute('class', 'dis-block')
         })
     }
@@ -215,3 +215,14 @@ function pricetool(event){
 
     
 }
+
+document.getElementById('sideTrig').addEventListener('click',function(event){
+    if(this.classList.contains('active')){
+        this.classList.remove('active')
+        this.innerHTML='&equiv;'
+    }else{
+        this.classList.add('active');
+        this.innerHTML='X'
+
+    }
+})

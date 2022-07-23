@@ -6,38 +6,93 @@ body{
 
 header{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    background-color: rgb(23, 23, 45);
+    background-color: rgb(17, 17, 32);
     position: sticky;
-    padding: 15px 5px;
+    padding: 6px 25px;
     top: 0;
     z-index: 5;
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: inherit;
 }
-header>div, header>nav{
-    display: flex;    
-}
-p{
-    box-sizing: border-box;
-    margin: auto 7px;
-    padding: 3px 7px;
-    font-size: 14px;
-}
-#dropmenu{
-    position: absolute;
-}
-head>nav>p:first-child{
-    display: flex;
-    flex-direction: column;
-}
+
 #logo1>img{
     width: 40px;
     height: 40px;
     margin: auto 2px;
     border-radius: 10px;
 }
+#logo1{
+    display: flex;
+}
+#logo1>p{
+    font-size: 1.3em;
+    font-weight: 500;
+}
+#sidemenu{
+    display: inherit;
+    justify-content: space-around;
+    align-items: center;
+}
+#sideTrig{
+    background-color: inherit;
+    border:1px solid grey;
+    color: white;
+    display: none;
+    padding: 5px 7px;
+    font-weight: 1000;
+}
+ul{
+    display: inline-flex;
+    list-style: none;    
+}
+ul li{
+    box-sizing: border-box;
+    margin: auto 7px;
+    padding: 3px 7px;
+    font-size: 14px;
+    font-family: inherit;
+}
+#dropMenu ul{
+    /* position: absolute; */
+    display: none;
+}
+#dropTri span{
+    font-weight: 1000;
+}
+#dropTri:hover span{
+    transform: rotate(180deg);
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    color: cyan;
+    transition: 0.25s;
+}
+#dropTri:hover #dropMenu ul{
+    display: block;
+    position: absolute;
+    top: 50px;
+    background-color: white;
+    color: black;
+    text-align: left;
+    padding: 0;
+    border-radius: 10px;
+    z-index: 125;
+    box-shadow: 0 0 15px 2px rgba(192, 192, 192, 0.39);
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+#dropTri:hover #dropMenu ul li{
+    display: block;
+    padding: 15px;
+    margin: 0;
+}
+#dropTri:hover #dropMenu ul li:hover{
+    background-color: cyan;
+    border-radius: 10px 10px 0 0;
+}
+
 
 
 .bgc-skyblue{
@@ -51,6 +106,78 @@ a{
     text-decoration: none;
     color: inherit;
 }
-#dropmenu{
-    display: none;
+
+/* media query 1 <140px */
+@media screen  and (min-width: 1401px) {
+    ul li{
+        font-size: 1.2em;
+    }
+}
+@media screen  and (max-width: 1300px) {
+    #logo1 img{
+        width: 25px;
+        height: 25px;
+    }
+    #logo1 p{
+        font-size: 1em;
+    }
+
+}
+@media screen  and (max-width: 1111px) {
+    #logo1 p{
+        display: none;
+    }
+}
+@media screen  and (max-width: 1060px) {
+    #logo1 img{
+        width: 40px;
+        height: 40px;
+    }
+}
+@media screen  and (max-width: 1024px) {
+    #userData>ul>li:nth-child(2){
+        display: none;
+    }
+}
+@media screen  and (max-width: 887px) {
+    header{
+        display: block;
+    }
+    #logo1{
+        display: inline-flex;
+    }
+    #logo1 p{
+        display: inline-block;
+    }
+    #sideTrig{
+        display: inline-block;
+        margin: 10px 20px 0;
+    }
+    #sideTrig~ *{
+        display: none;
+    }
+    #sideTrig.active~*{
+       display: block;
+       position: relative;
+       top: -20px;
+       left: -30px;
+       margin-top: 0;
+       padding: 0;
+    
+    }
+    #sideTrig.active~*>*{
+        display: block;
+        margin: 15px 0;
+
+     
+     }
+     #sideTrig~nav>ul{
+        margin: 0;    
+     }
+     #sideTrig~*>ul>li{
+        margin: 25px;
+     }
+    #dropMenu ul{
+        display: none;
+    }
 }

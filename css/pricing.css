@@ -166,7 +166,9 @@ input[type=range] {
     top: 40px;
     z-index: 1;
 }
-
+#plansA{
+    display: none;
+}
 .plan {
     width: 300px;
     background-color: rgb(250, 250, 250);
@@ -355,4 +357,35 @@ tr:nth-child(2n) {
 }
 .dis-block{
     display: block;
+}
+
+@media screen  and (max-width: 1221px) {
+    #services{
+        display: none;
+    }
+    #plansA{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .plan{
+        margin-top: 25px;
+        text-align: center;
+        width: 45%;
+        min-width: 400px;
+    }
+}
+@media screen  and (max-width: 1042px) {
+    #priceTop>div{
+        flex-direction: column;
+    }
+    #priceTop a{
+        margin-top: 20px;
+    }
+}
+@media screen  and (max-width: 951px) {
+    #cont {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
