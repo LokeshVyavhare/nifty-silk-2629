@@ -3,10 +3,7 @@ body{
     padding: 0;
     font-family: 'Graphik Web',Helvetica,sans-serif;
 }
-/* p{
-    word-spacing: 2px;
-    letter-spacing: 0.1em;
-} */
+
 header{
     display: flex;
     justify-content: space-around;
@@ -28,8 +25,8 @@ p{
     padding: 3px 7px;
     font-size: 14px;
 }
-#feature{
-    display: none;
+#dropmenu{
+    position: absolute;
 }
 head>nav>p:first-child{
     display: flex;
@@ -42,14 +39,7 @@ head>nav>p:first-child{
     border-radius: 10px;
 }
 
-/* #drpbutn{
-    border: none;
-    background-color: inherit;
-    color: inherit;
-    font-family: inherit;
-    font-size: 16px;
 
-} */
 .bgc-skyblue{
     background-color: rgb(103, 183, 214);
     border-radius: 5px;
@@ -60,4 +50,7 @@ head>nav>p:first-child{
 a{
     text-decoration: none;
     color: inherit;
+}
+#dropmenu{
+    display: none;
 }
