@@ -19,7 +19,7 @@ function signData(event) {
     user.pass = document.getElementById('pass').value;
     usersData.push(user);
     localStorage.setItem('usersData', JSON.stringify(usersData));
-    window.location.href='index.html';
+    window.location.href='login.html';
 
 }
 
